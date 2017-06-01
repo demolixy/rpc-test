@@ -4,6 +4,7 @@
 package com.demolixy.complexrpc.connection;
 
 import java.util.List;
+import java.util.Map;
 
 import com.demolixy.complexrpc.model.RpcRequest;
 
@@ -23,6 +24,6 @@ public interface RpcConnection {
     public InvokeFuture<Object> removeFuture(String key);
     public void setResult(Object ret);
     public void setTimeOut(long timeout);
-//    public void setAsyncMethod(Map<String,ResponseCallbackListener> map);
+    public void setAsyncMethod(Map<String,ResponseCallbackListener> map);
     public List<InvokeFuture<Object>> getFutures(String method);
 }

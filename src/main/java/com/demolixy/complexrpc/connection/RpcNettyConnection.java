@@ -248,5 +248,13 @@ public class RpcNettyConnection implements RpcConnection {
         }
         return list;
     }
+    /* (non-Javadoc)
+     * @see com.demolixy.complexrpc.connection.RpcConnection#setAsyncMethod(com.demolixy.complexrpc.connection.Map)
+     */
+    @Override
+    public void setAsyncMethod(Map<String, ResponseCallbackListener> map) {
+        // TODO Auto-generated method stub
+        
+    }
 
 }
